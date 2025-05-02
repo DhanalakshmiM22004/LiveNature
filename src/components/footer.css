@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .footer {
+    background-color: #b3cf99;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+    .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  } 
+  .footer-container div {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+  }  
+  .footer-about{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    position: relative;
+  }
+  .footer-about.show {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .footer-product{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    position: relative;
+  }
+  .footer-product.show {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .footer-contact{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    position: relative;
+  }
+  .footer-contact.show {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .icon{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    position: relative;
+  }
+  .icon.show {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .footer-bottom{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    position: relative;
+  }
+  .footer-bottom.show {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  } 
+  .footer p, .footer li {
+    font-size: 17px;
+    line-height: 1.6;
+  } 
+  .footer a {
+    color: black;
+    text-decoration: none;
+  }
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  } 
+  .footer ul li {
+    margin: 5px 0;
+  } 
+  .footer-bottom {
+    border-top: 1px solid #7f8c8d;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 0.8rem;
+  }
+  .contact-form .input-container {
+    position: relative;
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: none;
+    color: black;
+  }
+  .contact-form textarea {
+    resize: none;
+  }
+  .contact-form button {
+    width: 25%;
+    padding: 10px;
+    background-color:whitesmoke;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .contact-form button :hover{
+        background-color: #b3cf99 ;
+  }
+.footer-icon{
+  margin-top: 20px;
+}  
+.fa {
+  padding: 5px;
+  font-size: 33px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  
+  color: white;
+}
+.fa-google {
+
+  color: white;
+}
+
+.fa-linkedin {
+
+  color: white;
+}
+

@@ -1,0 +1,122 @@
+/* Global Styles */
+*{
+    box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+          body {
+              margin: 0;
+              font-family: Arial, sans-serif;
+              background-color:whitesmoke;
+    color: black;
+  
+              height: 100vh;
+          }
+  
+          /* Navbar Styles */
+          .navbar {
+              position: fixed;
+              top: 0;
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 10px 20px;
+              z-index: 1000;
+              transition: background 0.3s ease, backdrop-filter 0.3s ease;
+          }
+  
+          .navbar.transparent {
+              background: none;
+          }
+  
+          .navbar.glass {
+             
+             background-color: whitesmoke;
+          }
+  
+          .logo {
+            font-family: "Lobster", serif; ;
+    font-size:30px;
+        margin-left: 30px;
+          }
+  
+          .navbar ul {
+              list-style: none;
+              display: flex;
+              margin: 0;
+              padding: 0;
+          }
+  
+          .navbar ul li {
+              margin: 0 15px;
+          }
+  
+          .navbar ul li a {
+              text-decoration: none;
+              color: black;
+              font-size: 18px;
+            
+          }
+          .navbar ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+          
+        }
+          .navbar ul li p {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+          
+        }
+          .menu-toggle {
+              display: none;
+              cursor: pointer;
+          }
+  
+          .menu-toggle .material-icons {
+              font-size: 30px;
+              color: black;
+          }
+  
+          /* Responsive Styles */
+         @media screen and (max-width: 750px) {
+              .menu-toggle {
+                  display: block;
+              }
+  
+              .navbar ul {
+                  position: fixed;
+                  top: 50px;
+                  left: 49%;
+                  width: 50%;
+                  height: 50%;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  backdrop-filter: blur(30px);
+              background-color: whitesmoke;
+                  display: none;
+                  margin: 0;
+                  padding: 0;
+                  z-index: 999;
+              }
+              .logo {
+            font-family:'Lobster' ;
+    font-size:30px;
+        margin-left: 20px;
+          }
+              .navbar ul.active {
+                  display: flex;
+              }
+  
+              .navbar ul li {
+                  margin: 15px 0;
+              }
+  
+              .navbar ul li a {
+                  font-size: 18px;
+                  color: black;
+              }
+          }
