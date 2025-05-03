@@ -33,7 +33,7 @@ body {
 }
 
 .item2 {
-    margin-top: 25px;
+    margin-top: 13px;
     flex-grow: 1;
     display: flex;
     justify-content: center;
@@ -64,7 +64,7 @@ body {
 }
 
 .item1 h4{
-    margin-top: 5%;
+    margin-top: 55px;
     font-size: 20px;
    
  }
