@@ -39,7 +39,8 @@ const SignUp = () =>{
     return(  <>
    <div className="item1">
   <h4>Join LiveNature</h4>
-  <p>Sign up and be part of our nature-loving community. Explore gardening tips, buy plants, and make your space greener.</p>
+  <p>Where growth meets gratitude.
+  Your garden is just a click away.</p>
 </div>
     <div className="item2">
       <form onSubmit={handleSubmit} className="form_main">
