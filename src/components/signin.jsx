@@ -42,7 +42,8 @@ const SignIn = () =>{
       Welcome , LiveNature
   </h4>
   <p>
-    Live with Nature offers a diverse selection of indoor and outdoor plants, along with expert gardening tips. Join our community to bring nature closer to your home.
+  Step into a world where nature thrives.
+Your green journey starts again
   </p>
 </div>
     <div className="item2">
