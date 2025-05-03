@@ -25,14 +25,14 @@ body {
     transform: translateY(-30px);
     transition: all 0.8s ease;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5%;
 }
 .item1.show {
     animation: fadeInDown 0.8s ease forwards;
 }
 
 .item2 {
-    margin-top: 29px;
+    margin-top: 20px;
     flex-grow: 1;
     display: flex;
     justify-content: center;
@@ -79,7 +79,7 @@ body {
 }
 
 .item1 h4{
-   margin-top: 5%;
+   margin-top: 9%;
    font-size: 20px;
   
 }
