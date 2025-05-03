@@ -8,21 +8,22 @@ const Home = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const carouselRef = useRef(null);
 
-    const handleIndicatorClick = (index) => {
-        setActiveIndex(index);
-    };
 
-    const slideWidth = () => {
-        return carouselRef.current ? carouselRef.current.children[0].clientWidth : 0;
-    };
+   const slideWidth = () => {
+    return carouselRef.current ? carouselRef.current.offsetWidth : 0;
+};
 
-    const scrollToCollection = () => {
-        const collectionSection = document.getElementById('plant-collection');
-        if (collectionSection) {
-            collectionSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
 
+const handleIndicatorClick = (index) => {
+    setActiveIndex(index);
+};
+    
+const scrollToCollection = () => {
+    const collectionSection = document.getElementById("plant-collection");
+    if (collectionSection) {
+        collectionSection.scrollIntoView({ behavior: "smooth" });
+    }
+};
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -36,13 +37,13 @@ const Home = () => {
             observer.observe(el);
         });
 
-        return () => observer.disconnect(); // Cleanup observer on unmount
+        return () => observer.disconnect(); 
     }, []);
 
     return (
         <>
              <div className="box1"> 
-                <div className="carousel"> 
+             <div className="carousel" ref={carouselRef}> 
                     <div className="carousel-track" style={{ transform: `translateX(-${activeIndex * slideWidth()}px)` }}> 
                         <div className="carousel-item"> 
                             <img src="./src/img/1735483820904.jpg" alt="Slide 1" /> 
